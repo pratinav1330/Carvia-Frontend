@@ -1,0 +1,107 @@
+.search-page {
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+.search-page__header {
+  padding: var(--space-2xl) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.search-page__header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at top, rgba(99, 102, 241, 0.08), transparent 70%);
+  pointer-events: none;
+}
+
+.search-page__header .container {
+  position: relative;
+  z-index: 1;
+}
+
+.search-page__title {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: var(--space-lg);
+}
+
+.search-page__title-gradient {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.search-page__bar-wrapper {
+  max-width: 640px;
+}
+
+.search-page__results {
+  padding: var(--space-xl) 0 var(--space-3xl);
+}
+
+.search-page__error {
+  text-align: center;
+  padding: var(--space-3xl) var(--space-lg);
+  animation: fadeIn 0.5s ease-out;
+}
+
+.search-page__error-icon {
+  font-size: 3.5rem;
+  margin-bottom: var(--space-md);
+}
+
+.search-page__error-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f87171;
+  margin-bottom: var(--space-sm);
+}
+
+.search-page__error-text {
+  color: var(--text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+.search-page__error-retry {
+  padding: var(--space-sm) var(--space-xl);
+  background: var(--accent-gradient);
+  color: white;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  transition: var(--transition-base);
+}
+
+.search-page__error-retry:hover {
+  background: var(--accent-gradient-hover);
+  transform: translateY(-1px);
+}
+
+.search-page__initial {
+  text-align: center;
+  padding: var(--space-3xl) var(--space-lg);
+  animation: fadeIn 0.5s ease-out;
+}
+
+.search-page__initial-icon {
+  font-size: 4rem;
+  margin-bottom: var(--space-md);
+  opacity: 0.5;
+}
+
+.search-page__initial-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+.search-page__initial-text {
+  color: var(--text-muted);
+}
